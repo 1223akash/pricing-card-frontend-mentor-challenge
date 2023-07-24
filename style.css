@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  padding: 90px;
+  padding: 15px;
 }
 
 h2, h4, p {
@@ -18,8 +18,6 @@ h2, h4, p {
 }
 
 #card {
-  width: 600px;
-  height: 400px;
   box-shadow: 2px 3px 7px 0px rgba(0,0,0,0.35);
   border-radius: 5px;
   overflow: hidden;
@@ -39,7 +37,8 @@ h2, h4, p {
 
 #bottom-left-section {
   display: inline-block;
-  width: 50%;
+/*   width: 50%; */
+  width: 100%;
   height: 100%;
   vertical-align: top;
   background-color: #2ab2af;
@@ -48,7 +47,8 @@ h2, h4, p {
 
 #bottom-right-section {
   display: inline-block;
-  width: 50%;
+/*   width: 50%; */
+  width: 100%;
   height: 100%;
   vertical-align: top;
   background-color: #2EBFBD;
@@ -127,4 +127,15 @@ ul {
 
 li {
   margin-bottom: 2px;
+}
+
+@media (min-width: 576px) {
+  #card {
+    width: 550px;
+    height: 400px;
+  }
+  
+  #bottom-left-section, #bottom-right-section {
+    width: 50%;
+  }
 }
